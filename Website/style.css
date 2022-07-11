@@ -1,0 +1,142 @@
+/* Removes gaps around page */
+html, body, h1 {
+  margin: 0;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Set default font */
+* {
+  font-family: sans-serif;
+}
+
+/* Setup header background and height */
+.header {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, .66) url('images/Shopping mall banner.jpg') no-repeat;
+  background-size: cover;
+  /* Set the centre point of the picture to resize around */
+  background-position: 80% 66%;
+  height: 10rem;
+  background-blend-mode: darken;
+}
+
+.content {
+  padding: 3rem;
+  padding-top: 0;
+  display: flex;
+}
+
+.about {
+  margin-top: 3rem;
+  margin-left: auto;
+  padding-left: 5rem;
+  width: 50%;
+  padding-right: 5rem;
+}
+
+.about .title {
+  display: flex;
+  justify-content: center;
+}
+
+.about p {
+  font-size: 1.5rem;
+}
+
+/* Setup header title colour and position */
+.header .title {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.header .title h1 {
+  color: white;
+}
+
+.title h1 {
+  font-size: 3rem;
+}
+
+.button {
+  border-radius: 2rem;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  height: 5rem;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.button:hover {
+  background-color: #dddddd;
+  cursor: pointer;
+}
+
+.button:hover .button-text {
+  text-decoration: underline;
+}
+
+.icon {
+  margin-left: auto;
+  height: 5rem;
+}
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #eeeeee;
+  height: 5rem;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.footer a {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Modifications for mobile friendliness */
+@media screen and (max-width: 1000px) {
+  .content, .footer {
+    flex-direction: column;
+  }
+  .about, .buttons, .button {
+    width: auto;
+  }
+  .about {
+    padding: 0;
+  }
+  .button {
+    height: 1rem;
+  }
+  .icon {
+    height: 3rem;
+  }
+  .button-text {
+    font-size: 1.5rem;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer a {
+    margin-top: 0.5rem;
+  }
+  .footer a:last-child {
+    margin-bottom: 0.5rem;
+  }
+}
