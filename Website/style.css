@@ -1,3 +1,5 @@
+/* Author: Elena Nastina */
+
 /* Removes gaps around page */
 html, body, h1 {
   margin: 0;
@@ -22,17 +24,25 @@ body {
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, .66) url('images/Shopping mall banner.jpg') no-repeat;
+  background-blend-mode: darken;
   background-size: cover;
   /* Set the centre point of the picture to resize around */
   background-position: 80% 66%;
   height: 10rem;
-  background-blend-mode: darken;
 }
 
 .content {
   padding: 3rem;
   padding-top: 0;
   display: flex;
+}
+
+#content-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  padding-top: 0;
 }
 
 .about {
@@ -44,6 +54,12 @@ body {
 }
 
 .about .title {
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -62,11 +78,19 @@ body {
   color: white;
 }
 
+.header .icon {
+  margin-right: 3rem;
+}
+
+.header .icon:hover {
+  cursor: pointer;
+}
+
 .title h1 {
   font-size: 3rem;
 }
 
-.button {
+.button, .store-card {
   border-radius: 2rem;
   background-color: #eeeeee;
   display: flex;
@@ -75,6 +99,14 @@ body {
   height: 5rem;
   padding: 3rem;
   margin-top: 3rem;
+  box-shadow: 6px 6px 24px 3px #cccccc;
+}
+
+.store-card {
+  width: 50vw;
+  height: auto;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .button:hover {
@@ -110,12 +142,18 @@ body {
   display: none;
 }
 
+#content-list .title {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 /* Modifications for mobile friendliness */
 @media screen and (max-width: 1000px) {
   .content, .footer {
     flex-direction: column;
   }
-  .about, .buttons, .button {
+  .about, .buttons, .button, .store-card {
     width: auto;
   }
   .about {
@@ -124,8 +162,19 @@ body {
   .button {
     height: 1rem;
   }
-  .icon {
+  .header .title {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .title h1 {
+    font-size: 2.5rem;
+  }
+  .store-card {
+    min-width: calc(100% - 6rem);
+  }
+  .header .icon {
     height: 3rem;
+    margin-right: 2rem;
   }
   .button-text {
     font-size: 1.5rem;
