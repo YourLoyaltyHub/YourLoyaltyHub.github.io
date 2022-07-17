@@ -7,6 +7,7 @@
             <webLink>www.supergroceriespoint.com</webLink>
             <promotion>2 points per Euro, 1 euro off when reach 200 points.</promotion>
             <location>East Point</location>
+            <category>Food</category>
         </superGrocery>
         <freshVeggies>
             <depName>Fresh Veggies</depName>
@@ -14,13 +15,15 @@
             <webLink>www.thelocalfreshveggie.com</webLink>
             <promotion>Free fruit or veggie when collected 10 points. One point is collected for every purchase visit.</promotion>
             <location>Blanchardstown</location>
+            <category>Food</category>
         </freshVeggies>
         <winerie>
-            <depName>Winerie</depName>
+            <depName>Winery</depName>
             <description>Worldwide Wine and related products.</description>
-            <webLink>www.valeriewinerie.com</webLink>
+            <webLink>www.valeriewinery.com</webLink>
             <promotion>25% discount off in the 10th wine bought.</promotion>
             <location>Donnybrook</location>
+            <category>Alcohol</category>
         </winerie>
         <pharmaComp>
             <depName>Pharma Company</depName>
@@ -28,6 +31,7 @@
             <webLink>www.giantpharmacompany.com</webLink>
             <promotion>Vouchers off discount available after purchase.</promotion>
             <location>Stephens Green</location>
+            <category>Medical</category>
         </pharmaComp>
         <coffeeToGo1>
             <depName>Coffee to Go Unit 1</depName>
@@ -35,6 +39,7 @@
             <webLink>www.dublincoffeetogo.com</webLink>
             <promotion>10th Coffee free.</promotion>
             <location>Smithfield</location>
+            <category>Coffee</category>
         </coffeeToGo1>
             <coffeeToGo2>
             <depName>Coffee to Go Unit 2</depName>
@@ -42,6 +47,7 @@
             <webLink>www.dublincoffeetogo.com</webLink>
             <promotion>10th Coffee free.</promotion>
             <location>Abbey Street</location>
+            <category>Coffee</category>
         </coffeeToGo2>
         <petrolStay>
             <depName>Stay Petrol Station</depName>
@@ -49,6 +55,7 @@
             <webLink>www.staypetrolstation.com</webLink>
             <promotion>Collect points and exchange for Petrol.</promotion>
             <location>Tallaght</location>
+            <category>Convenience</category>
         </petrolStay>
         <happyKids>
             <depName>Happy Kids</depName>
@@ -56,6 +63,7 @@
             <webLink>www.happykidstoys.com</webLink>
             <promotion>1 kids surprise when collected 200 points. 5 Points per Euro.</promotion>
             <location>Swords</location>
+            <category>Toys</category>
         </happyKids>
         <inPaperCraft>
             <depName>Paper Art and Craft</depName>
@@ -63,6 +71,7 @@
             <webLink>www.dyiartandcraft.com</webLink>
             <promotion>10% off when using loyalty card.</promotion>
             <location>Drundrum</location>
+            <category>Stationary</category>
         </inPaperCraft>
         <iceCreamCool>
             <depName>Ice Cream Cool</depName>
@@ -70,6 +79,7 @@
             <webLink>www.madeathomeicecream.com</webLink>
             <promotion>1 Scoop free when 10 purchased.</promotion>
             <location>Fairview</location>
+            <category>Food</category>
         </iceCreamCool>
         <superSaverFood>
             <depName>Super Saver</depName>
@@ -77,6 +87,7 @@
             <webLink>www.supersaver.com</webLink>
             <promotion>5 euro off for the next purchase when spend 50 euro.</promotion>
             <location>Glasnevin</location>
+            <category>Food</category>
         </superSaverFood>
         <selectedForYou>
             <depName>Selected for You</depName>
@@ -84,6 +95,7 @@
             <webLink>www.selectedforyou.com</webLink>
             <promotion>Free Local products for every 10 spent.</promotion>
             <location>Dawson Street</location>
+            <category>Gifts</category>
         </selectedForYou>
         <coffeeAndBagel>
             <depName>Bagel and Coffee</depName>
@@ -91,6 +103,7 @@
             <webLink>www.bagelandcoffee.com</webLink>
             <promotion>Win Breakfast Bagel when 10 spent.</promotion>
             <location>Blackrock</location>
+            <category>Coffee</category>
         </coffeeAndBagel>
         <angelsNails>
             <depName>Angels Nails</depName>
@@ -98,6 +111,7 @@
             <webLink>www.sngelnails.com</webLink>
             <promotion>Get the 10th Manicure for free.</promotion>
             <location>Castlenock</location>
+            <category>Beauty</category>
         </angelsNails>
         <theReadings>
             <depName>The Readings</depName>
@@ -105,6 +119,7 @@
             <webLink>www.thereadings.com</webLink>
             <promotion>50% off in Kids section when purchasing a new book using loyalty card.</promotion>
             <location>Bray</location>
+            <category>Books</category>
         </theReadings>
         <dressingKids>
             <depName>Dressing Kids</depName>
@@ -112,20 +127,23 @@
             <webLink>www.dressingkids.com</webLink>
             <promotion>10% off for every purchase using loyalty card.</promotion>
             <location>Sandymount</location>
+            <category>Clothes</category>
         </dressingKids>
         <offLicense>
             <depName>Off License French</depName>
-            <description>Beer, wine, whiskey, and other alcoholic drinks..</description>
+            <description>Beer, wine, whiskey, and other alcoholic drinks.</description>
             <webLink>www.frenchofflicense.com</webLink>
             <promotion>Collect points to be changed for discount.</promotion>
             <location>Rathmines</location>
+            <category>Alcohol</category>
         </offLicense>
         <vappings>
-            <depName>Super Vappes</depName>
-            <description>Vappes and related products.</description>
-            <webLink>www.supervappings.com</webLink>
+            <depName>Super Vapes</depName>
+            <description>Vapes and related products.</description>
+            <webLink>www.supervapes.com</webLink>
             <promotion>Refil for free when 10 spent.</promotion>
             <location>Rialto</location>
+            <category>Medical</category>
         </vappings>
         <forPlayers>
             <depName>For Players</depName>
@@ -133,6 +151,7 @@
             <webLink>www.forplayers.com</webLink>
             <promotion>Gift available after purchase.</promotion>
             <location>Drumcondra</location>
+            <category>Music</category>
         </forPlayers>
         <allAboutSport>
             <depName>All About Sport</depName>
@@ -140,6 +159,7 @@
             <webLink>www.allaboutsport.com</webLink>
             <promotion>10 euro off for acumulated 500 points.</promotion>
             <location>Ashtown</location>
+            <category>Sport</category>
         </allAboutSport>
     </department>
 </Company>

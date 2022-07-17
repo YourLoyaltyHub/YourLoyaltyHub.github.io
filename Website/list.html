@@ -9,28 +9,44 @@
     <link rel="stylesheet" href="style.css">
     <script src="list.js" defer></script>
 
+    <!-- Creates a template that is then cloned for all shop cards.
+     Template is hidden. A clone template is then filled in with information -->
     <template id="store-card">
-      <div class="store-card">
+      <div id='store-parent' class="store-card">
         <div class="card-title">
           <h1 id='store-name'>N/A</h1>
+          <div class="card-category">
+            <p id='store-category'>Category: N/A</p>
+          </div>
         </div>
         <p id='store-description'>N/A</p>
         <a id='store-website'>N/A</a>
         <h2>Promotions</h2>
         <p id='store-promotions'>N/A</p>
+        <h2>Location</h2>
+        <a id='store-location'>N/A</a>
       </div>
     </template>
   </head>
   <body>
+    <!-- Banner code, same as on the main page. Includes additional
+     functions such as search and home functions-->
     <div class="header">
 
       <div class="title">
         <h1>Welcome To Your Loyalty Hub</h1>
       </div>
 
+      <div class="search-elems">
+        <input type="text" placeholder="Search: Name | Category" id="search">
+        <img class="search-button" src="images/Search icon.svg" onclick="searchByName()" />
+        <img class="search-button" src="images/Category search icon.svg" onclick="searchByCategory()" />
+      </div>
+
       <img class="icon" src="images/Home icon.svg" onclick="location.href='index.html'" />
 
     </div>
+    <!-- container that holds all shop cards including the title of the page (List of Stores) -->
     <div id='content-list'>
 
       <div class="title">
@@ -38,6 +54,7 @@
       </div>
 
     </div>
+    <!-- Footer container, exactly the same as on the main page -->
     <div class="footer">
 
       <a href="faq.html">FAQ</a>
