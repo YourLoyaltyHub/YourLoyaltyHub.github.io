@@ -187,6 +187,34 @@ body {
   background-color: #dddddd;
   border: solid 3px #888888;
 }
+/* FAQ page styling, margin, fonts etc */
+.content-faq {
+  padding: 3rem;
+  padding-top: 3rem;
+  display: flex;
+}
+
+.content-faq .icon {
+  height: 34rem;
+  margin: 9rem;
+  margin-left: auto;
+}
+
+.content-faq p {
+  margin-top: 0.4rem;
+  font-size: 1.3rem;
+}
+
+/* content of the terms&conditions and PP */
+.content-terms, .content-pp {
+  padding: 3rem;
+  padding-top: 3rem;
+  display: flex;
+}
+/* Terms&Conditions and PP text  */
+.content-terms, .content-pp p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 
 /* Modifications for mobile friendliness */
 @media screen and (max-width: 1000px) {
