@@ -1,0 +1,106 @@
+html, body, h1 {
+    margin: 0;
+  }
+  
+  html, body {
+    min-height: 100vh;
+  }
+  body {
+    font-family:sans-serif;    
+    width:100%;
+    height:50%;
+    align-items: center;
+    padding: 1px 1px;
+    
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    background: white url('logo.jpg') no-repeat;
+    /* background-size: cover; */
+    /* Set the centre point of the picture to resize around */
+    background-position: 80% 66%;
+    height: 10rem;
+    border-style: solid;
+    border-color:rgb(24, 216, 197);
+    
+  }
+  
+  .header .title {
+    margin-left: 3rem;
+  }
+  
+  .header .title h1 {
+    color: rgb(27, 189, 243);
+  }
+  
+  .title h1 {
+    font-size: 3rem;
+  }
+  
+  
+  form {
+    border: 60px solid rgb(198, 227, 237);
+    width:50%;
+    align-items: center;
+    padding: 50px 50px;
+    margin: 1px 300px;
+    background-color: white;
+    border-radius: 1rem;
+  }
+  
+  input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(27, 189, 243);
+    box-sizing: border-box;
+    border-radius: 1rem;
+  }
+  
+  button {
+    background-color: rgb(27, 189, 243);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size:20px;
+    border-radius: 1rem;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 8px 15px;
+    background-color: #c6c1c0;
+  }
+  
+  
+  
+  .container {
+    padding: 10px;
+    
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+    
+  }
+  
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
