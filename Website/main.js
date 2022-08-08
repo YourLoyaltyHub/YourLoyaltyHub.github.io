@@ -1,16 +1,7 @@
 // Author: Elena Nastina
-
-function loggedIn() {
-  console.log("Login check not yet implemented!")
-  return false;
-}
-
-function logout() {
-  console.log("Logout not yet implemented!")
-}
-
+// if logged in, show the log out button and hide the log in/profile buttons
 function checkLogin() {
-  if (loggedIn()) {
+  if (loggedIn) {
     let logoutElem = document.getElementById('logout')
     let loginElem = document.getElementById('login')
     let profileElem = document.getElementById('profile')

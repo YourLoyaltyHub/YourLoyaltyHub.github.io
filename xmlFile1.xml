@@ -1,7 +1,8 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <Company>
     <department>
         <superGrocery>
+            <id>0</id>
             <depName>Super Grocery</depName>
             <description>Food and Household supplies.</description>
             <webLink>www.supergroceriespoint.com</webLink>
@@ -10,6 +11,7 @@
             <category>Food</category>
         </superGrocery>
         <freshVeggies>
+            <id>1</id>
             <depName>Fresh Veggies</depName>
             <description>Vegetables and fruits local shop.</description>
             <webLink>www.thelocalfreshveggie.com</webLink>
@@ -18,6 +20,7 @@
             <category>Food</category>
         </freshVeggies>
         <winerie>
+            <id>2</id>
             <depName>Winery</depName>
             <description>Worldwide Wine and related products.</description>
             <webLink>www.valeriewinery.com</webLink>
@@ -26,6 +29,7 @@
             <category>Alcohol</category>
         </winerie>
         <pharmaComp>
+            <id>3</id>
             <depName>Pharma Company</depName>
             <description>Medicine, beauty, healthy products, supplements and more.</description>
             <webLink>www.giantpharmacompany.com</webLink>
@@ -34,6 +38,7 @@
             <category>Medical</category>
         </pharmaComp>
         <coffeeToGo1>
+            <id>4</id>
             <depName>Coffee to Go Unit 1</depName>
             <description>Coffee and pastries.</description>
             <webLink>www.dublincoffeetogo.com</webLink>
@@ -41,7 +46,8 @@
             <location>Smithfield</location>
             <category>Coffee</category>
         </coffeeToGo1>
-            <coffeeToGo2>
+        <coffeeToGo2>
+            <id>5</id>
             <depName>Coffee to Go Unit 2</depName>
             <description>Coffee and pastries.</description>
             <webLink>www.dublincoffeetogo.com</webLink>
@@ -50,6 +56,7 @@
             <category>Coffee</category>
         </coffeeToGo2>
         <petrolStay>
+            <id>6</id>
             <depName>Stay Petrol Station</depName>
             <description>Fuel and lubricants for road motor vehicles.</description>
             <webLink>www.staypetrolstation.com</webLink>
@@ -58,6 +65,7 @@
             <category>Convenience</category>
         </petrolStay>
         <happyKids>
+            <id>7</id>
             <depName>Happy Kids</depName>
             <description>Especialist Selling toys.</description>
             <webLink>www.happykidstoys.com</webLink>
@@ -66,6 +74,7 @@
             <category>Toys</category>
         </happyKids>
         <inPaperCraft>
+            <id>8</id>
             <depName>Paper Art and Craft</depName>
             <description>Creative products, arts, craft and DYI.</description>
             <webLink>www.dyiartandcraft.com</webLink>
@@ -74,6 +83,7 @@
             <category>Stationary</category>
         </inPaperCraft>
         <iceCreamCool>
+            <id>9</id>
             <depName>Ice Cream Cool</depName>
             <description>Homemade Ice cream.</description>
             <webLink>www.madeathomeicecream.com</webLink>
@@ -82,6 +92,7 @@
             <category>Food</category>
         </iceCreamCool>
         <superSaverFood>
+            <id>10</id>
             <depName>Super Saver</depName>
             <description>Great value for Groceries.</description>
             <webLink>www.supersaver.com</webLink>
@@ -90,6 +101,7 @@
             <category>Food</category>
         </superSaverFood>
         <selectedForYou>
+            <id>11</id>
             <depName>Selected for You</depName>
             <description>Local Products, handmade, gifts, specially.</description>
             <webLink>www.selectedforyou.com</webLink>
@@ -98,6 +110,7 @@
             <category>Gifts</category>
         </selectedForYou>
         <coffeeAndBagel>
+            <id>12</id>
             <depName>Bagel and Coffee</depName>
             <description>Homemade bagel and Fresh Coffee.</description>
             <webLink>www.bagelandcoffee.com</webLink>
@@ -106,6 +119,7 @@
             <category>Coffee</category>
         </coffeeAndBagel>
         <angelsNails>
+            <id>13</id>
             <depName>Angels Nails</depName>
             <description> Manicures, pedicures, nail polish application, nail repair, treatments.</description>
             <webLink>www.sngelnails.com</webLink>
@@ -114,6 +128,7 @@
             <category>Beauty</category>
         </angelsNails>
         <theReadings>
+            <id>14</id>
             <depName>The Readings</depName>
             <description>Book Shop, magazines, and stationary.</description>
             <webLink>www.thereadings.com</webLink>
@@ -122,6 +137,7 @@
             <category>Books</category>
         </theReadings>
         <dressingKids>
+            <id>15</id>
             <depName>Dressing Kids</depName>
             <description>Kids and baby clothes.</description>
             <webLink>www.dressingkids.com</webLink>
@@ -130,6 +146,7 @@
             <category>Clothes</category>
         </dressingKids>
         <offLicense>
+            <id>16</id>
             <depName>Off License French</depName>
             <description>Beer, wine, whiskey, and other alcoholic drinks.</description>
             <webLink>www.frenchofflicense.com</webLink>
@@ -138,6 +155,7 @@
             <category>Alcohol</category>
         </offLicense>
         <vappings>
+            <id>17</id>
             <depName>Super Vapes</depName>
             <description>Vapes and related products.</description>
             <webLink>www.supervapes.com</webLink>
@@ -146,6 +164,7 @@
             <category>Medical</category>
         </vappings>
         <forPlayers>
+            <id>18</id>
             <depName>For Players</depName>
             <description>Instruments and related products.</description>
             <webLink>www.forplayers.com</webLink>
@@ -154,6 +173,7 @@
             <category>Music</category>
         </forPlayers>
         <allAboutSport>
+            <id>19</id>
             <depName>All About Sport</depName>
             <description>A to Z products for sports.</description>
             <webLink>www.allaboutsport.com</webLink>

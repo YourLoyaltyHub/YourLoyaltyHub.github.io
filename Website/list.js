@@ -1,4 +1,6 @@
-function addStore(name, desc, website, promos, location, category) {
+let stores = {}
+
+function addStore(id, name, desc, website, promos, location, category) {
   let template = document.getElementById('store-card')
   let clone = template.content.cloneNode(true)
   document.getElementById('content-list').appendChild(clone)
@@ -29,6 +31,16 @@ function addStore(name, desc, website, promos, location, category) {
   storeElem.innerText = 'Category - ' + (category ? category : "N/A")
   storeElem.removeAttribute('id')
 
+  if (loggedIn) {
+    storeElem = document.getElementById('store-points')
+    storeElem.innerText = stores[id]
+    storeElem.removeAttribute('id')
+
+    storeElem = document.getElementById('store-id')
+    storeElem.value = id
+    storeElem.removeAttribute('id')
+  }
+
   storeElem = document.getElementById('store-parent')
   storeElem.removeAttribute('id')
   name ? storeElem.setAttribute('data-name', name.toLowerCase()) : storeElem.setAttribute('data-name', '')
@@ -36,6 +48,7 @@ function addStore(name, desc, website, promos, location, category) {
 }
 
 function parseStore(xmlDoc, storeTag) {
+  let storeId = xmlDoc.querySelector(storeTag + ' id').innerHTML
   let storeName = xmlDoc.querySelector(storeTag + ' depName').innerHTML
   let storeDescription = xmlDoc.querySelector(storeTag + ' description').innerHTML
   let storeWebsite = xmlDoc.querySelector(storeTag + ' webLink').innerHTML
@@ -43,7 +56,13 @@ function parseStore(xmlDoc, storeTag) {
   let storeLocation = xmlDoc.querySelector(storeTag + ' location').innerHTML
   let storeCategory = xmlDoc.querySelector(storeTag + ' category').innerHTML
 
-  addStore(storeName, storeDescription, storeWebsite, storePromotions, storeLocation, storeCategory)
+  if (points[storeId]) {
+    stores[storeId] = points[storeId]
+  } else {
+    stores[storeId] = 0
+  }
+
+  addStore(storeId, storeName, storeDescription, storeWebsite, storePromotions, storeLocation, storeCategory)
 }
 
 function loadStores() {

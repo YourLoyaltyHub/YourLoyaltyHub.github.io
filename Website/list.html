@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Loyalty Hub</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      const loggedIn = <%= loggedIn %>
+      let points = <%- points ? JSON.stringify(points.stores) : '{}' %>
+    </script>
     <script src="list.js" defer></script>
 
     <!-- Creates a template that is then cloned for all shop cards.
@@ -25,6 +29,15 @@
         <p id='store-promotions'>N/A</p>
         <h2>Location</h2>
         <a id='store-location'>N/A</a>
+        <% if (loggedIn) { %>
+          <h2>Points</h2>
+          <a id='store-points'>N/A</a>
+          <form action="add_points.html" method="post">
+            <input id='store-id' type="hidden" name="id" value="bar" />
+            <input class="add-points" type="number" name="points" placeholder="Number of points to add (can be negative)" required>
+            <input class="add-points-button" type="submit" value="Add Points" />
+          </form>
+        <% } %>
       </div>
     </template>
   </head>
@@ -34,7 +47,7 @@
     <div class="header">
 
       <div class="title">
-        <h1>Welcome To Your Loyalty Hub</h1>
+        <h1>Welcome To Your Loyalty Hub<%= loggedIn ? user.name ? ', ' + user.name : '' : '' %></h1>
       </div>
 
       <div class="search-elems">
@@ -43,10 +56,13 @@
         <img class="search-button" src="images/Category search icon.svg" onclick="searchByCategory()" />
       </div>
 
-      <img class="icon" src="images/Home icon.svg" onclick="location.href='index.html'" />
+      <img class="icon" src="images/Home icon.svg" onclick="location.href='/'" />
 
     </div>
-    <!-- container that holds all shop cards including the title of the page (List of Stores) -->
+    <% if (messages.error) { %>
+      <p>Error: <%= messages.error %></p>
+    <% } %>
+    <!-- container that will hold all shop cards and the title of the page (List of stores)  -->
     <div id='content-list'>
 
       <div class="title">

@@ -12,10 +12,10 @@
     <!-- header, including the banner image, welcome text and Home icon -->
     <div class="header">
       <div class="title">
-        <h1>Welcome To Your Loyalty Hub</h1>
+        <h1>Welcome To Your Loyalty Hub<%= loggedIn ? user.name ? ', ' + user.name : '' : '' %></h1>
       </div>
 
-    <img class="icon" src="images/Home icon.svg" onclick="location.href='index.html'" />
+    <img class="icon" src="images/Home icon.svg" onclick="location.href='/'" />
     </div>
     <!-- Container that holds the Q&A text and a question mark icon -->
     <div class="content-faq">

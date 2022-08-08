@@ -4,6 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="login.css">
 
+<title>Your Loyalty Hub</title>
+<link rel="stylesheet" href="login.css">
 </head>
 <body>
   <div class="header">
@@ -15,26 +17,25 @@
   </div>
 
 
-<form action="/action_page.php" method="post">
-
+<form action="/login.html" method="post">
   </div>
 
   <div class="container">
-    <label for="uname"><b>Email</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <% if (messages.error) { %>
+      <p>Error: <%= messages.error %></p>
+    <% } %>
+    <label for="username"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="username" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
+    <input type="password" placeholder="Enter Password" name="password" required>
+
     <button type="submit" id="sign-up-button">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <link class="psw"><a href='./signUp.html'">Create an Account</a></link>
+    <button type="button" class="cancelbtn" onclick="location.href='/'">Cancel</button>
+    <link class="psw"><a href='./signUp.html'>Create an Account</a></link>
   </div>
 </form>
 

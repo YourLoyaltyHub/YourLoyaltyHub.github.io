@@ -15,24 +15,30 @@
   </div>
 
 
-<form action="/action_page.php" method="post">
+<form action="/profile.html" method="post">
 
   </div>
 
   <div class="container">
-    <label for="uname"><b>Name</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <% if (messages.error) { %>
+      <p>Error: <%= messages.error %></p>
+    <% } %>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" value="<%= user.name %>">
 
-    <label for="mail"><b>Phone Number</b></label>
-    <input type="text" placeholder=" E.g +353 999999999" name="phone" required>
+    <label for="phone"><b>Phone Number</b></label>
+    <input type="text" placeholder="Irish Number E.g +353 999999999" name="phone" value="<%= user.phone %>">
 
     <label for="mail"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="mail" required>
+    <input type="text" placeholder="Enter Email" name="email" value="<%= user.email %>" required>
 
-    <label for="mail"><b>Unique Loyalty Card Number</b></label>
-    <input type="text" placeholder="Card Number" name="card" required>
-        
+    <p><b>Unique Loyalty Card Number</b></p>
+    <p><%= user.card_number %></p>
+
     <button type="submit">Update Profile</button>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn" onclick="location.href='/'">Go Home</button>
+    </div>
   </div>
 </form>
 
